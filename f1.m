@@ -1,0 +1,17 @@
+function  f=f1(x,t,y,C,kernel,kerneloption,csigma)
+% L=length(t);
+% K=svmkernel(t,kernel,kerneloption);
+% alpha1=x(1:L);
+% alpha2=x(L+1:2*L);
+% X1=(alpha2-alpha1)'*K*(alpha2-alpha1);
+% a=(alpha2-alpha1)'*y;
+% f=1/2*X1-a+1/(2*(C/L))*(alpha1'*alpha1+alpha2'*alpha2);
+L=length(t);
+K=svmkernel(t,kernel,kerneloption);
+alpha1=x(1:L);
+X1=alpha1'*K*alpha1;
+a=alpha1'*y;
+% X1=alpha1*K*alpha1'
+% a=alpha1*y;
+csigma2=csigma.*csigma;
+f=1/2*X1+a+1/(2*(C/L))*((alpha1.*alpha1)'*csigma2);
