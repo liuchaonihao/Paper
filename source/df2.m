@@ -1,0 +1,10 @@
+function g=df2(x,t,y,C,kernel,kerneloption,csigma)
+L=length(t);
+K=svmkernel(t,kernel,kerneloption);
+alpha1=x(1:L);
+temp1=K*alpha1;
+csigma2=csigma.*csigma;
+G1=temp1'-y'+1/(C/L)*alpha1'*csigma2;
+g=G1';
+% f(alpha1)=1/2*alpha1'*K*alpha1-alpha1'*y+1/(2*(C/L))*((alpha1.*alpha1)'*csigma2);
+% g=diff(f(alpha1));
