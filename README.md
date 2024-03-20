@@ -47,8 +47,11 @@ NOTE: You will need administrator rights to run MCRInstaller.
 Files to package for Standalone 
 ================================
 -Gui.exe
+
 -MCRInstaller.exe 
+   
    -if end users are unable to download the MATLAB Runtime using the above link, include it when building your component by clicking the "Runtime downloaded from web" link in the Deployment Tool
+
 -This readme file 
 
 3. Definitions
