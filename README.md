@@ -7,15 +7,15 @@ Twin proximal support vector regression, a novel approach, merges twin support v
 
 Set up a Matlab environment for R2016a version
 
-##Source
+## Source
 
-3. Datasets
+1. Datasets
 
 You can download the dataset by referring to the URL.
 
 https://github.com/liuchaonihao/Paper.git
 
-4. Training
+2. Training
 
 Run mulphrdemo.m
 
