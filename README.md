@@ -7,6 +7,8 @@ Twin proximal support vector regression, a novel approach, merges twin support v
 
 Set up a Matlab environment for R2016a version
 
+##Source
+
 3. Datasets
 
 You can download the dataset by referring to the URL.
@@ -17,7 +19,7 @@ https://github.com/liuchaonihao/Paper.git
 
 Run mulphrdemo.m
 
-# Application
+## Application
 MATLAB Compiler
 
 1. Prerequisites for Deployment 
@@ -30,7 +32,7 @@ MATLAB Compiler
   
       >>mcrinstaller
       
-      at MATLAB prompt. The MCRINSTALLER command displays the location of the MATLAB Runtime installer.
+      At MATLAB prompt. The MCRINSTALLER command displays the location of the MATLAB Runtime installer.
 
   (2) run the MATLAB Runtime installer.
 
